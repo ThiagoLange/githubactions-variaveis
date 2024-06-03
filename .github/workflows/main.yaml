@@ -37,4 +37,5 @@ jobs:
         run: echo "$RUNNER_VARS"
       - name: Contexto vars
         run: echo "${{ vars.VARS_CONTEX }}"
-        
+      - name: Variavel Secrets
+        run: echo "${{ secrets.SECRETS_CONTEXT }}"
