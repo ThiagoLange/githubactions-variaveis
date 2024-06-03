@@ -1,0 +1,1 @@
+# githubactions-variaveis e contexto
