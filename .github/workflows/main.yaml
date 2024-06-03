@@ -1,5 +1,6 @@
 name: Como usar variavel de ambiente e contexto do GitHub Actions
-on: 
+on:
+    workflow_dispatch:
     push:
         branches: [main]
 env:
@@ -29,4 +30,4 @@ jobs:
       - name: Contexto runner
         env:
           RUNNER_CONTEXT: ${{ toJson(runner) }}
-        run: echo "$RUNNER_CONTEX
+        run: echo "$RUNNER_CONTEXT
